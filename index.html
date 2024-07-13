@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+    <h2 id="heading">Signup Form</h2>
+    <form onsubmit="return checkData()" action="submitted.html">
+        UserID:
+        <input type="text" id="namefield" required>
+        <br>
+        Contact No.:
+        <input type="text" id="contact" required>
+        <br>
+        Password:
+        <input type="password" id="pass" required>
+        <br>
+        Confirm Password:
+        <input type="password" id="passcheck" required>
+        <br><br>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+    </div>
+    <script defer src="app.js"></script>
+</body>
+</html>
